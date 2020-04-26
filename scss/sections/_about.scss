@@ -4,7 +4,7 @@
     background-color: $lite;
 
     @include small-screen {
-        height: 45vh;
+        min-height: 45vh;
     }
     
     .container {
