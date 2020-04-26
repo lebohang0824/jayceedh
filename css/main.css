@@ -34,6 +34,94 @@ a {
   text-decoration: none;
 }
 
+.header-about {
+  height: 40vh;
+  background-attachment: fixed;
+  background-image: url("../imgs/main/4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #0d0372;
+}
+.header-about:after {
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 40vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(13, 3, 114, 0.85);
+}
+.header-about .headline {
+  top: 55%;
+  z-index: 2;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .header-about .headline {
+    top: 50%;
+  }
+}
+.header-about .headline img {
+  width: 150px;
+}
+@media screen and (min-width: 768px) {
+  .header-about .headline img {
+    width: 250px;
+  }
+}
+.header-about .headline h1 {
+  color: #FFF;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 5px;
+  font-size: 40;
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .header-about .headline h1 {
+    font-size: 60;
+    font-size: 3.75rem;
+  }
+}
+.header-about .headline p {
+  color: #FFF;
+  font-weight: 200;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+  font-size: 18;
+  font-size: 1.125rem;
+}
+.header-about .headline a {
+  color: #FFF;
+  padding: 15px 25px;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  font-size: 13;
+  font-size: 0.8125rem;
+  border: solid 1px #FFF;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.header-about .headline a:hover {
+  color: #0d0372;
+  font-weight: 500;
+  border: solid 1px #F5F5F5;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -ms-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: background-color 0.6s;
+  -moz-transition: background-color 0.6s;
+  -ms-transition: background-color 0.6s;
+  -o-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
 .experience .main {
   display: grid;
   grid-template-columns: 1fr;
