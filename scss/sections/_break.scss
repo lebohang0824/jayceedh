@@ -1,0 +1,9 @@
+.break {
+    padding: 20px 10px;
+    h1 {
+        color: $primary;
+        font-weight: 700;
+        text-align: center;
+        @include font-size(35);
+    }
+}

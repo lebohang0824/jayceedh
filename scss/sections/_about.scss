@@ -1,0 +1,56 @@
+.about {
+    height: 45vh;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    background-color: $lite;
+    .container {
+        width: 800px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include small-screen {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include medium-screen {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include large-screen {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .left {
+            padding: 20px;
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+        }
+        .right {
+            padding: 20px;
+            border-left: solid 1.3px #D0D0D0;
+            h1 {
+                color: $primary;
+                margin-top: 20px;
+                font-weight: 700;
+                @include font-size(30);
+            }
+
+            p {
+                color: #111;
+                letter-spacing: 1px;
+                @include font-size(15);
+            }
+
+            a {
+                &:hover {
+                    text-decoration: underline;
+                    @include transition(text-decoration 2s);
+                }
+            }
+        }
+    }
+}

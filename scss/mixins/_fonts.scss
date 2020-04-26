@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&family=Ubuntu:wght@300;500;700&display=swap');
+
+@mixin manrope {
+    font-family: 'Manrope', sans-serif;
+}
+
+@mixin ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@mixin font-size($size, $base: 16) {
+    font-size: $size;
+    font-size: ($size / $base) * 1rem;
+}

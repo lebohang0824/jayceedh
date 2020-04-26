@@ -1,0 +1,42 @@
+.contact {
+    background-color: #FFF;
+    .main {
+        width: 80%;
+        display: grid;
+        margin: 0 auto;
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+
+        @include small-screen {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        div {
+            padding: 20px 5px;
+            @include font-size(13);
+        }
+        h3 {
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            font-weight: 700;
+            color: $primary;
+        }
+        .logo {
+            text-align: center;
+        }
+        p {
+            color: #666;
+            padding-bottom: 10px;
+            b {
+                color: $primary;
+            }
+        }
+        img {
+            width: 120px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+}

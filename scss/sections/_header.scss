@@ -1,0 +1,73 @@
+.header {
+    height: 100vh;
+    background-attachment: fixed;
+    @include background-image('main/4.jpg', top, $primary); 
+
+    &:after {
+        z-index: 1;
+        content: '';
+        width: 100%;
+        height: 100vh;
+        @include absolute(left 0 top 0);
+        @include transparent($primary, .15);
+    }
+
+    .headline {
+        top: 35%;
+        z-index: 2;
+        padding: 0 10px;
+        position: relative;
+        text-align: center;
+
+        @include medium-screen {
+            top: 30%;
+        }
+        
+        img {
+            width: 150px;
+            @include small-screen {
+                width: 250px;
+            }
+        }
+
+        h1 {
+            color: #FFF;
+            @include ubuntu;
+            letter-spacing: 5px;
+            @include font-size(40);
+
+            @include small-screen {
+                @include font-size(60);
+            }
+        }
+
+        p {
+            color: #FFF;
+            font-weight: 200;
+            letter-spacing: 5px;
+            margin-bottom: 50px;
+            @include font-size(18);
+        }
+
+        a {
+            color: #FFF;
+            padding: 15px 25px;
+            border-radius: 5px;
+            letter-spacing: 3px;
+            @include font-size(13);
+            border: solid 1px #FFF;
+            text-transform: uppercase;
+            @include transparent(#FFF, 0.9);
+
+            &:hover {
+                color: $primary;
+                font-weight: 500;
+                border: solid 1px #F5F5F5;
+                @include transition(color 1s);
+                @include transparent(#FFF, 0.2);
+                @include transition(background-color .6s);
+            }
+        }
+
+    }
+}

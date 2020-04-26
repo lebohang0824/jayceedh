@@ -1,0 +1,49 @@
+.navbar {
+    z-index: 3;
+    width: 100%;
+    text-align: right;
+    @include fixed(left 0 top 0);
+
+    ul {
+        width: 80%;
+        padding: 10px;
+        margin: 0 auto;
+        list-style: none;
+        li {
+            display: inline-block;
+        }
+    }
+
+    .nav-logo {
+        float: left;
+        img {
+            width: 50px;
+            display: inline-block;
+        }
+    }
+
+    .nav-item {
+        a {
+            width: 95px;
+            color: #FFF;
+            padding: 15px 0;
+            border-radius: 5px;
+            text-align: center;
+            letter-spacing: 2.5px;
+            display: inline-block;
+            @include font-size(13);
+            text-transform: uppercase;
+            &:hover {
+                @include transparent(#FFF, .75); 
+                @include transition(background-color .6s);
+            }
+        }
+    }
+
+    .active {
+        a {
+            font-weight: 500;
+            @include transparent(#FFF, .9);
+        }
+    }
+}
