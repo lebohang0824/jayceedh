@@ -1,7 +1,4 @@
 .services {
-
-    
-
     .main {
         display: grid;
         grid-template-columns: 1fr;
@@ -11,7 +8,10 @@
         }
 
         div {
-            height: 65vh;
+            min-height: 65vh;
+            @include small-screen {
+                height: 65vh;
+            }
         }
 
         .image {

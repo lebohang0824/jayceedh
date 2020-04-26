@@ -191,7 +191,12 @@ a {
   }
 }
 .services .main div {
-  height: 65vh;
+  min-height: 65vh;
+}
+@media screen and (min-width: 768px) {
+  .services .main div {
+    height: 65vh;
+  }
 }
 .services .main .image {
   position: relative;
