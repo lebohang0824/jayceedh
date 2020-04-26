@@ -20,7 +20,11 @@
         display: grid;
         position: relative;
         @include border-box;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        @include small-screen {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
         .title {
             color: #FFF;

@@ -1,23 +1,19 @@
 .about {
-    height: 45vh;
     padding-top: 7%;
     padding-bottom: 3%;
     background-color: $lite;
+
+    @include small-screen {
+        height: 45vh;
+    }
+    
     .container {
-        width: 800px;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr;
 
         @include small-screen {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        @include medium-screen {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        @include large-screen {
+            width: 800px;
             grid-template-columns: 1fr 1fr;
         }
 
