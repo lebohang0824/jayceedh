@@ -1,8 +1,11 @@
 .company {
-    height: 50vh;
+    min-height: 50vh;
     position: relative;
     background-attachment: fixed;
     @include background-image('main/4.jpg', top, $primary); 
+    @include medium-screen {
+        height: 50vh;
+    }
 
     &:after {
         z-index: 1;
@@ -15,26 +18,38 @@
 
     .main {
         z-index: 2;
-        width: 80%;
+        width: 95%;
         margin: auto;
         display: grid;
         position: relative;
         @include border-box;
         grid-template-columns: 1fr;
 
-        @include small-screen {
+        @include medium-screen {
+            width: 80%;
             grid-template-columns: 1fr 1fr 1fr;
         }
 
         .title {
             color: #FFF;
             font-weight: 200;
-            margin-top: 100px;
+            margin-top: 20px;
             text-align: center;
             margin-bottom: 10px;
             letter-spacing: 5px;
             @include font-size(30);
             text-transform: uppercase;
+
+            @include medium-screen {
+                margin-top: 100px;
+            }
+        }
+
+        .values {
+            margin-bottom: 50px;
+            @include medium-screen {
+                margin-bottom: 0px;
+            }
         }
 
         p {

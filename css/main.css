@@ -280,7 +280,7 @@ a {
 }
 
 .company {
-  height: 50vh;
+  min-height: 50vh;
   position: relative;
   background-attachment: fixed;
   background-image: url("../imgs/main/4.jpg");
@@ -288,6 +288,11 @@ a {
   background-repeat: no-repeat;
   background-position: top;
   background-color: #0d0372;
+}
+@media screen and (min-width: 992px) {
+  .company {
+    height: 50vh;
+  }
 }
 .company:after {
   z-index: 1;
@@ -301,7 +306,7 @@ a {
 }
 .company .main {
   z-index: 2;
-  width: 80%;
+  width: 95%;
   margin: auto;
   display: grid;
   position: relative;
@@ -310,21 +315,35 @@ a {
   box-sizing: border-box;
   grid-template-columns: 1fr;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .company .main {
+    width: 80%;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .company .main .title {
   color: #FFF;
   font-weight: 200;
-  margin-top: 100px;
+  margin-top: 20px;
   text-align: center;
   margin-bottom: 10px;
   letter-spacing: 5px;
   font-size: 30;
   font-size: 1.875rem;
   text-transform: uppercase;
+}
+@media screen and (min-width: 992px) {
+  .company .main .title {
+    margin-top: 100px;
+  }
+}
+.company .main .values {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 992px) {
+  .company .main .values {
+    margin-bottom: 0px;
+  }
 }
 .company .main p {
   font-weight: 200;
