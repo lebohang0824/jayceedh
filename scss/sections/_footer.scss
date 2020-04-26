@@ -1,0 +1,13 @@
+.footer {
+    color: #666;
+    padding: 10px 0;
+    @include ubuntu;
+    letter-spacing: 1px;
+    text-align: center;
+    @include font-size(13);
+    background-color: $lite;
+    strong {
+        color: $primary;
+        @include font-size(11.5);
+    }
+}

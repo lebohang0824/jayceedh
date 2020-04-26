@@ -47,3 +47,9 @@
         }
     }
 }
+
+.sticky {
+    @include transparent($primary, .15);
+    @include transition(background-color .5s);
+    // @include shadow(2px 1px 1px 1px #000);
+}
