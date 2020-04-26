@@ -372,6 +372,24 @@ a {
   height: 150px;
 }
 
+.approach {
+  padding: 50px 10px;
+}
+.approach .main {
+  width: 80%;
+  margin: auto;
+}
+.approach .main h1 {
+  color: #0d0372;
+  letter-spacing: 2px;
+}
+.approach .main p {
+  color: #222;
+  letter-spacing: 1px;
+  font-size: 15;
+  font-size: 0.9375rem;
+}
+
 .company {
   min-height: 50vh;
   position: relative;

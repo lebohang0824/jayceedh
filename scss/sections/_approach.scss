@@ -1,0 +1,16 @@
+.approach {
+    padding: 50px 10px;
+    .main {
+        width: 80%;
+        margin: auto;
+        h1 {
+            color: $primary;
+            letter-spacing: 2px;
+        }
+        p {
+            color: #222;
+            letter-spacing: 1px;
+            @include font-size(15)
+        }
+    }
+}
