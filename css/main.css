@@ -44,7 +44,12 @@ a {
   }
 }
 .experience .main div {
-  height: 80vh;
+  min-height: 80vh;
+}
+@media screen and (min-width: 768px) {
+  .experience .main div {
+    height: 80vh;
+  }
 }
 .experience .main .image {
   position: relative;
@@ -64,11 +69,16 @@ a {
   position: absolute;
 }
 .experience .main .experience-list {
-  width: 80%;
+  width: 95%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   background-color: #F9F9F9;
+}
+@media screen and (min-width: 768px) {
+  .experience .main .experience-list {
+    width: 80%;
+  }
 }
 .experience .main .experience-list .head {
   padding: 20px 10px;
@@ -201,11 +211,16 @@ a {
   position: absolute;
 }
 .services .main .services-list {
-  width: 80%;
+  width: 95%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   background-color: #F9F9F9;
+}
+@media screen and (min-width: 768px) {
+  .services .main .services-list {
+    width: 80%;
+  }
 }
 .services .main .services-list .head {
   padding: 20px 10px;

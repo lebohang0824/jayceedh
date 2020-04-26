@@ -28,9 +28,12 @@
         }
 
         .services-list {
-            width: 80%;
+            width: 95%;
             @include center-block;
             background-color: #F9F9F9;
+            @include small-screen {
+                width: 80%;
+            }
             .head {
                 padding: 20px 10px;
                 @include border-box;
