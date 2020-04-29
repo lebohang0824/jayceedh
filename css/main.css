@@ -34,6 +34,44 @@ a {
   text-decoration: none;
 }
 
+.services-container {
+  width: 70%;
+  margin: auto;
+  padding: 40px 0;
+}
+.services-container .container {
+  padding: 10px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+.services-container .container .block {
+  padding: 10px;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 200px auto;
+}
+.services-container .container .block img {
+  width: auto;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.services-container .container .block .info {
+  padding: 10px 20px;
+}
+.services-container .container .block .info h1 {
+  color: #0d0372;
+  letter-spacing: 2px;
+  font-size: 16;
+  font-size: 1rem;
+}
+.services-container .container .block .info p {
+  color: #333;
+  font-size: 14;
+  font-size: 0.875rem;
+}
+
 .header-about {
   height: 40vh;
   background-attachment: fixed;
