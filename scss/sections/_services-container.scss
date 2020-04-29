@@ -1,11 +1,12 @@
 .services-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 40px 0;
     .container {
         padding: 10px;
         @include grid(1fr, 5px);
         @include medium-screen {
+            width: 80%;
             @include grid-columns(1fr 1fr);
         }
 

@@ -35,7 +35,7 @@ a {
 }
 
 .services-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding: 40px 0;
 }
@@ -47,6 +47,7 @@ a {
 }
 @media screen and (min-width: 992px) {
   .services-container .container {
+    width: 80%;
     grid-template-columns: 1fr 1fr;
   }
 }
