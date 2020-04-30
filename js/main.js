@@ -38,7 +38,7 @@ $('.partner').slick({
 $(window).scroll(function(e) {
     const scroll = document.documentElement.scrollTop;
     
-    if (scroll > 500) {
+    if (scroll > 200) {
         $('.navbar').addClass('sticky');
     } else {
         $('.navbar').removeClass('sticky');        
