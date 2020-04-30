@@ -6,7 +6,8 @@
         padding: 10px;
         @include grid(1fr, 5px);
         @include medium-screen {
-            width: 80%;
+            width: 70%;
+            margin: auto;
             @include grid-columns(1fr 1fr);
         }
 
