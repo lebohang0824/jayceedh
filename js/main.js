@@ -44,3 +44,11 @@ $(window).scroll(function(e) {
         $('.navbar').removeClass('sticky');        
     }
 });
+
+$('#bars').click(function(e) {
+    if ($('.nav-item').css('display') == 'none') {
+        $('.nav-item').css('display', 'block');
+    } else {
+        $('.nav-item').css('display', 'none');
+    }
+});
