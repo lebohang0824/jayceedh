@@ -1,0 +1,60 @@
+.contact-us {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0px;
+    background-color: #FFF;
+    @include grid(1fr, 5px);
+    @include small-screen {
+        width: 80%;
+        padding: 50px 10px;
+        @include grid-columns(1fr 1fr);
+    }
+    @include medium-screen {
+        width: 60%;
+        @include grid-columns(1fr 1fr);
+    }
+    .form {
+        padding: 20px;
+        h1 {
+            color: $primary;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        form {
+            .group {
+                width: 100%;
+                clear: both;
+                label {
+                    display: block;
+                    color: $primary;
+                    font-weight: 700;
+                    @include manrope;
+                    margin-top: 15px;
+                    @include font-size(14)
+                }
+                .input {
+                    width: 100%;
+                    display: block;
+                    padding: 8px 15px;
+                    border-radius: 3px;
+                    border: solid 1px #999;
+                    box-sizing: border-box;
+                }
+            }
+            button {
+                color: #FFF;
+                cursor: pointer;
+                margin-top: 15px;
+                border-radius: 5px;
+                padding: 15px 35px;
+                border: solid 1px #999;
+                background-color: $primary;
+                &:hover {
+                    @include transparent($primary, .1);
+                }
+            }
+        }
+    }
+}

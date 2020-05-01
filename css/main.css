@@ -177,6 +177,72 @@ a {
   transition: background-color 0.6s;
 }
 
+.contact-us {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0px;
+  background-color: #FFF;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 768px) {
+  .contact-us {
+    width: 80%;
+    padding: 50px 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-us {
+    width: 60%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.contact-us .form {
+  padding: 20px;
+}
+.contact-us .form h1 {
+  color: #0d0372;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.contact-us .form form .group {
+  width: 100%;
+  clear: both;
+}
+.contact-us .form form .group label {
+  display: block;
+  color: #0d0372;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  margin-top: 15px;
+  font-size: 14;
+  font-size: 0.875rem;
+}
+.contact-us .form form .group .input {
+  width: 100%;
+  display: block;
+  padding: 8px 15px;
+  border-radius: 3px;
+  border: solid 1px #999;
+  box-sizing: border-box;
+}
+.contact-us .form form button {
+  color: #FFF;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 15px 35px;
+  border: solid 1px #999;
+  background-color: #0d0372;
+}
+.contact-us .form form button:hover {
+  background-color: rgba(13, 3, 114, 0.9);
+}
+
 .experience .main {
   display: grid;
   grid-template-columns: 1fr;
