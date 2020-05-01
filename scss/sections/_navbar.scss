@@ -54,9 +54,10 @@
             border: none;
             padding: 8px 10px;
             border-radius: 5px;
-            @include transparent(#FFF, .5);
+            @include transparent(#FFF, .1);
             img {
                 width: 20px;
+                padding-top: 2px;
             }
         }
     }

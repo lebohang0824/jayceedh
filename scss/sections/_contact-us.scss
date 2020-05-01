@@ -14,7 +14,12 @@
         @include grid-columns(1fr 1fr);
     }
     .form {
-        padding: 20px;
+        padding: 20px 0;
+        background-color: #FFF;
+        @include small-screen {
+            padding: 20px;
+            background-color: #F9F9F9;
+        }
         h1 {
             color: $primary;
             font-weight: 400;

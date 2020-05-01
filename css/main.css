@@ -200,7 +200,14 @@ a {
   }
 }
 .contact-us .form {
-  padding: 20px;
+  padding: 20px 0;
+  background-color: #FFF;
+}
+@media screen and (min-width: 768px) {
+  .contact-us .form {
+    padding: 20px;
+    background-color: #F9F9F9;
+  }
 }
 .contact-us .form h1 {
   color: #0d0372;
@@ -788,10 +795,11 @@ a {
   border: none;
   padding: 8px 10px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .navbar .toggle button img {
   width: 20px;
+  padding-top: 2px;
 }
 .navbar .nav-item {
   display: none;
