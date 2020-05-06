@@ -5,6 +5,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$to = "info@jayceedh.co.za";
 	$subject = "Email Form website form";
 
+	$name = $_POST['names'];
+	$surname = $_POST['surname'];
+	$mobile = $_POST['mobile'];
+	$email = $_POST['email'];
+
 	$message = `
 	<html>
 		<head>
@@ -26,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					<td>$email</td>
 				</tr>
 			</table>
-			<p>$message</p>
+			<p>$messages</p>
 		</body>
 	</html>
 	`;
@@ -41,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	mail($to,$subject,$message,$headers);
 
 } else {
-	redirect('/');
+	header('Location: https://jayceedh.co.za');
 }
 
 ?>

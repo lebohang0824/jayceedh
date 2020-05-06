@@ -56,5 +56,6 @@ $('#bars').click(function(e) {
 $('#contact-us').validate({
 	submitHandler: function (form) {
 		console.log(form);
+		fetch(form.action,{method:'post', body: new FormData(form)});
 	}
 });
