@@ -13,6 +13,11 @@
 		<link href="css/slick.css" rel="stylesheet">
 		<link href="css/slick-theme.css" rel="stylesheet">
 		<link href="css/animate.css" rel="stylesheet">
+        <style type="text/css">
+            .error {
+                color: red !important;
+            }
+        </style>
 
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" href="imgs/logo.png">
@@ -61,23 +66,23 @@
                 <form method="post" id="contact-us">
                     <div class="group">
                         <label>Full Names</label>
-                        <input type="text" class="input" placeholder="Full Names" />
+                        <input type="text" class="input" placeholder="Full Names" minlength="2" required />
                     </div>
                     <div class="group">
                         <label>Surname</label>
-                        <input type="text" class="input" placeholder="Surname" />
+                        <input type="text" class="input" placeholder="Surname" name="surname" minlength="2" required />
                     </div>
                     <div class="group">
                         <label>Contact Number</label>
-                        <input type="text" class="input" placeholder="Contact Number" />
+                        <input type="text" class="input" placeholder="Contact Number" name="mobile" minlength="9" required />
                     </div>
                     <div class="group">
                         <label>Email Address</label>
-                        <input type="text" class="input" placeholder="Email Address" />
+                        <input type="email" class="input" placeholder="Email Address" name="email" required />
                     </div>
                     <div class="group">
                         <label>Message</label>
-                        <textarea class="input" rows="4"></textarea>
+                        <textarea class="input" rows="4" name="message" minlength="5" required></textarea>
                     </div>
                     <button>Submit</button>
                 </form>
@@ -189,6 +194,7 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/slick.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
 		<script src="js/main.js"></script>
 		<script>
             

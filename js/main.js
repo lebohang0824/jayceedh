@@ -52,3 +52,9 @@ $('#bars').click(function(e) {
         $('.nav-item').css('display', 'none');
     }
 });
+
+$('#contact-us').validate({
+	submitHandler: function (form) {
+		console.log(form);
+	}
+});
