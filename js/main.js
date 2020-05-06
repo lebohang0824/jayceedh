@@ -55,7 +55,13 @@ $('#bars').click(function(e) {
 
 $('#contact-us').validate({
 	submitHandler: function (form) {
-		console.log(form);
-		fetch(form.action,{method:'post', body: new FormData(form)});
+		fetch('https://jayceedh.co.za/email.php', {
+			method:'post', 
+			body: new FormData(form)
+		}).then(function(res){
+			console.log('res');
+		}).catch(function(err){
+			console.log(err);
+		});
 	}
 });
