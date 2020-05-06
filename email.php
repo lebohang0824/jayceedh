@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$to = "info@jayceedh.co.za";
 	$subject = "Email Form website form";
 
-	$name = $_POST['names'];
+	$names = $_POST['names'];
 	$surname = $_POST['surname'];
 	$mobile = $_POST['mobile'];
 	$email = $_POST['email'];
