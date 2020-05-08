@@ -53,15 +53,19 @@ $('#bars').click(function(e) {
     }
 });
 
+const _self = $;
 $('#contact-us').validate({
 	submitHandler: function (form) {
-		fetch('https://jayceedh.co.za/email.php', {
-			method:'post', 
-			body: new FormData(form)
-		}).then(function(res){
-			console.log('res');
-		}).catch(function(err){
-			console.log(err);
-		});
+		$.post('email.php', {
+			names: form[0].value,
+			surname: form[1].value,
+			mobile: form[2].value,
+			email: form[3].value,
+			messages: form[4].value,
+		}).then(function(data){
+			if (data == true) {
+				alert('Your message has been sent!');
+			}
+		})
 	}
 });
